@@ -9,15 +9,21 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Poiret+One&family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- https://github.com/programa2rpromedio/curso_desarrollo_web_apps/blob/main/seo-htmlsemantico/etiquetasmeta.html -->
 </head>
 <body>
     <header>
-        <!-- <div>   
-            <img src="assets/img/Header.jpg" alt="Cardus Rafaela" class="img-header">
-        </div> -->
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
+            <div class="container">
+                <!-- <div class="container-fluid"> -->
                 <div class="container-fluid">
                     <a class="titulo" href="#">
                         <div class="d-flex justify-content-start align-items-center">
@@ -40,29 +46,179 @@
                             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Nosotros</a>
+                            <a class="nav-link" href="#MenuNosotros">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Eventos</a>
+                            <a class="nav-link" href="#MenuEventos">Eventos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Colaboraciones</a>
+                            <a class="nav-link" href="#MenuColaboraciones">Colaboraciones</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="#MenuContacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        
     </header>
     <main>
-        <section>Que hacemos</section>
-        <section>Carrusel</section>
-        <section>Colaboraciones</section>
+        <div>
+            <img src="/assets/img/Header.jpg" alt="Cardus Rafaela" class="img-header">
+        </div>
+        <section class="mt-3" id="MenuNosotros">
+            <div class="container fondo nosotros text-center">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-4">
+                        <img src="/assets/img/Cardus.png" alt="cardus" class="img-cardus">
+                    </div>
+                    <div class="col-8">
+                        <p class="presentacion">
+                            Nos enamora el entorno en el que vivimos, por eso intervenimos delicadamente los espacios. Utilizamos materiales y colores que se adaptan a eventos al aire libre o en espacios cerrados. Siempre tratamos de plasmar un estética natural y sobria, aunque también nos adaptamos a las necesidades de cada cliente, para que que cada evento sea especial. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-4 text-center">
+                <div class="d-flex flex-row justify-content-around">
+                    <div class="servicio fondo-2 ambientacion">
+                        <i class="fa-regular fa-lightbulb blanco"></i>
+                        <h4 class="poiret-one-regular mt-2 blanco">Ambientación</h4>
+                    </div>
+                    <div class="servicio fondo-1 asesoramiento">
+                        <i class="fa-regular fa-comments blanco"></i>
+                        <h4 class="poiret-one-regular mt-2 blanco">Asesoramiento</h4>
+                    </div>
+                    <div class="servicio fondo-2 mobiliario">
+                        <i class="fa-solid fa-couch blanco"></i>
+                        <h4 class="poiret-one-regular mt-2 blanco">Mobiliario</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="MenuEventos" class="mt-5 text-center">
+            <h1 class="poiret-one-regular">
+                Eventos
+            </h1>
+
+            <div id="carouselEventos" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselEventos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselEventos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselEventos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselEventos" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/assets/img/Carrusel/CarouselAyC.webp" class="d-block w-100 img-carousel" alt="Agasajo A y C">
+                        <div class="carousel-caption d-none d-md-block fondo-carousel">
+                            <h5>A y C Oleohidráulica</h5>
+                            <p>Agasajo fin de año</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/img/Carrusel/CarouselCora.webp" class="d-block w-100 img-carousel" alt="Cumpleaños Cora">
+                        <div class="carousel-caption d-none d-md-block fondo-carousel">
+                            <h5>Cora</h5>
+                            <p>Cumpleaños Número 1</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/img/Carrusel/CarouselCatalina.webp" class="d-block w-100 img-carousel" alt="Cumpleaños Catalina">
+                        <div class="carousel-caption d-none d-md-block fondo-carousel">
+                            <h5>Catalina</h5>
+                            <p>Cumpleaños Número 80</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/img/Carrusel/CarouselJockeyClub.webp" class="d-block w-100 img-carousel" alt="Evento Jockey Club">
+                        <div class="carousel-caption d-none d-md-block fondo-carousel">
+                            <h5>Jockey Club Rafaela</h5>
+                            <p>Regional Rafaela 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselEventos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselEventos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            
+        </section>
+        <section id="MenuColaboraciones" class="mt-5 text-center">
+            <h1 class="poiret-one-regular">
+                Colaboraciones
+            </h1>
+            <div class="container text-center">
+                <div class="d-flex flex-row justify-content-around">
+                    <div class="card tarjeta-colaboraciones">
+                        <img src="/assets/img/Colaboraciones/LogoBaquiano.webp" class="logo-colaboraciones" alt="Baquiano Rafaela">
+                        <div class="card-body">
+                            <h5 class="card-title">Baquiano</h5>
+                            <p class="card-text">Catering</p>
+                            <a href="https://www.instagram.com/baquianorafaela/" class="btn btn-danger" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="card tarjeta-colaboraciones">
+                        <img src="/assets/img/Colaboraciones/LogoBartenders.webp" class="logo-colaboraciones" alt="Bartenders Rafaela">
+                        <div class="card-body">
+                            <h5 class="card-title">Bartenders Rafaela</h5>
+                            <p class="card-text">Barra de Tragos</p>
+                            <a href="https://www.instagram.com/bartenders_rafaela/" class="btn btn-danger" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="card tarjeta-colaboraciones">
+                        <img src="/assets/img/Colaboraciones/LogoCamara.webp" class="logo-colaboraciones" alt="Vero Mascherano">
+                        <div class="card-body">
+                            <h5 class="card-title">Vero Mascherano</h5>
+                            <p class="card-text">Fotografía</p>
+                            <a href="https://www.instagram.com/vero_mascherano/" class="btn btn-danger" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>Formulario Contacto</footer>
+    <footer id="MenuContacto"  class="mt-5 pt-3 pb-3 text-center fondo-2">
+        <h1 class="poiret-one-regular">
+            Contacto
+        </h1>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-6 mx-auto mb-2">
+                    <form class="form-contacto" action="https://formsubmit.co/fede.kurganoff@gmail.com" method="POST">
+                        <div class="control-input">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" placeholder="Juan Doe" required>
+                        </div>
+                        <div class="control-input">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" placeholder="juandoe@mail.com" required>
+                        </div>
+                        <div class="control-input" id="input-telefono">
+                            <label for="telefono">Telefono</label>
+                            <input type="tel" name="telefono" placeholder="56111234567" required>
+                        </div>
+                        <div id="input-consulta">
+                            <label for="consulta">Consulta</label>
+                            <textarea type="text" name="consulta" placeholder="Dejanos tu consulta..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="mt-3 btn btn-primary">Enviar consulta</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
 
