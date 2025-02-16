@@ -39,11 +39,11 @@ header {
 .navbar {
     margin: 0 auto;
     width: 100%; 
-    position: absolute;
+    position: fixed;
     background-color: rgba(202, 176, 153, 0.5) !important;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 1000 !important;
     padding: 10px;
 }
 
@@ -98,7 +98,6 @@ header {
     align-items: center;
     text-align: center;
     transition: background 0.5s ease-in-out;
-    position: relative;
     overflow: hidden;
 }
 
@@ -154,7 +153,6 @@ header {
 
 .carousel-item {
     height: 500px; 
-    position: relative;
 }
 
 .img-carousel {
@@ -164,10 +162,12 @@ header {
 }
 
 .tarjeta-colaboraciones {
+    position: unset !important;
     padding: 15px 0 10px 0;
     width: 250px;
     align-items: center;
     background-color: rgb(184, 168, 132) !important;
+    box-shadow: 10px 10px 30px 1px rgba(0,0,0,0.75);
 }
 
 .logo-colaboraciones {
