@@ -259,33 +259,40 @@
         <h1 class="poiret-one-regular">
             Contacto
         </h1>
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-6 mx-auto mb-2">
-                    <form class="form-contacto" action="https://formsubmit.co/fede.kurganoff@gmail.com" method="POST">
-                        <div class="control-input">
-                            <label for="nombre">Nombre</label>
-                            <input type="text" name="nombre" placeholder="Juan Doe" required>
-                        </div>
-                        <div class="control-input">
-                            <label for="email">E-mail</label>
-                            <input type="email" name="email" placeholder="juandoe@mail.com" required>
-                        </div>
-                        <div class="control-input" id="input-telefono">
-                            <label for="telefono">Telefono</label>
-                            <input type="tel" name="telefono" placeholder="56111234567" required>
-                        </div>
-                        <div id="input-consulta">
-                            <label for="consulta">Consulta</label>
-                            <textarea type="text" name="consulta" placeholder="Dejanos tu consulta..." required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="mt-3 btn btn-primary">Enviar consulta</button>
-                    </form>
+        <div class="container text-center col-6 border border-black">
+            <form class="row">
+                <div class="col-md-6 mt-2">
+                    <label for="inputNombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="inputNombre" placeholder="Juan Doe">
                 </div>
+                <div class="col-md-6 mt-2">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="juandoe@mail.com">
+                </div>
+                <div class="col-12 mt-2">
+                    <label for="inputTelefono" class="form-label">Teléfono</label>
+                    <input type="number" class="form-control" id="inputTelefono" placeholder="561111234567">
+                </div>
+                <div class="col-12 mt-2">
+                    <label for="inputConsulta" class="form-label">Consulta</label>
+                    <input type="text" class="form-control" id="inputConsulta" placeholder="Dejanos tu consulta..">
+                </div>
+                <div class="col-12 mt-4 mb-4">
+                    <button type="submit" class="btn btn-primary">Enviar Consulta</button>
+                </div>
+            </form>
+        </div>
+        <div class="container mt-3 mb-3 d-flex justify-content-center">
+            <div class="d-flex align-items-center">
+                <span class="me-3 fw-bold">Encontranos en nuestras redes:</span>
+                <a href="https://www.instagram.com/cardus.rafaela/" class="me-2">
+                    <i class="fa-brands fa-instagram icono-grande"></i>
+                </a>
+                <a href="https://wa.me/5493492627150">
+                    <i class="fa-brands fa-whatsapp icono-grande"></i>
+                </a>
             </div>
         </div>
-        
     </footer>
 
     <!-- Bootstrap JS -->

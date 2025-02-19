@@ -177,35 +177,9 @@ header {
     object-fit: cover;
 }
 
-.form-contacto {
-    width: 600px;
-    padding: 8px 16px;
-    border: 1px black solid;
-}
-
-.control-input {
-    display: inline-block;
-    width: 280px;
-}
-
-.control-input label, .control-input input, #input-consulta textarea {
-    display: block;
-}
-
-.control-input input {
-    margin-top: 8px;
-    padding: 8px;
-    width: 100%;
-}
-
-#input-telefono, #input-consulta {
-    margin-top: 8px;
-    width: 100%;
-}
-
-#input-consulta textarea {
-    margin-top: 8px;
-    width: 100%
+.icono-grande {
+    font-size: 2em;
+    color: black;
 }
 
 .container-contacto {
